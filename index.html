@@ -30,6 +30,9 @@
 			<nav class="navbar row">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence-compressor2.png" alt="Logo La chouette agence" height="40" /></a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
 				</div>
 				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 					<ul class="site-navigation nav navbar-nav">
@@ -148,7 +151,7 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p>Nous travaillons avec beaucoup de clients, <br/> voici nos réalisations.</p>
+					<h2>Nous travaillons avec beaucoup de clients, <br/> voici nos réalisations.</h2>
 				</div>
 			</div>
 			<div class="row tight-width-whitespace portfolio-row">
@@ -178,7 +181,7 @@
 			<div class="row tight-width-whitespace portfolio-row">
 				<article>
 					<div class="col-sm-6">
-						<img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="Photo représentatant un panel d'objet nécessaire à un voyageur suite à la création de son site"/></a>
+						<img src="img/3-essai-compressor2.jpg" class="img-responsive portfolio-thumb" alt="Photo représentant un panel d'objet nécessaire à un voyageur suite à la création de son site"/></a>
 						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
 						</h3>
@@ -189,7 +192,7 @@
 				</article>
 				<article>
 					<div class="col-sm-6">
-						<img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="Photo représentant le bureau d'une agence de mariage pour la conception de leur site" /></a>
+						<img src="img/4-essai-compressor2.jpg" class="img-responsive portfolio-thumb" alt="Photo représentant le bureau d'une agence de mariage pour la conception de leur site" /></a>
 						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
 						</h3>
@@ -232,37 +235,38 @@
 							<div class="col-sm-6">
 								<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 									<div class="form-group">
-										<label>
+										<label for="name">
 											Nom
 										</label>
-										<input id="name" class="form-control" required />
+										<input id="name" name="name" type="text" class="form-control" required />
 									</div>
 									<div class="form-group">
-										<label>
+										<label for="email">
 											Adresse email
 										</label>
-										<input id="email" class="form-control" type="email" required />
+										<input id="email" name="email" type="email" class="form-control" type="email" required />
 									</div>
 									<div class="form-group">
-										<label>
+										<label for="text">
 											Comment nous avez-vous connu ?
 										</label>
-										<input class="form-control" type="email" required id="input_504" />
+										<input id="text" name="text" type="text" class="form-control" required />
 									</div>
 									<div class="form-group">
-										<label>
+										<label for="message">
 											Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-										</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+										</label>
+										<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
 									</div> 
 									<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 										Envoyer
 									</button>
 								</form>
 							</div>
-							<div class="col-sm-6">
-								<p>
+							<div class="col-6">
+								<address>
 									contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-								</p>
+								</address>
 							</div>
 						</div>
 					</div>

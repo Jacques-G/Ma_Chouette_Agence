@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
@@ -596,7 +598,7 @@ p {
 }
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto;
 }
 h2 {
     font-size: 22px;
@@ -651,7 +653,7 @@ h4 {
     background-color: #364577;
 }
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: rgb(150, 73, 37);
 }
 .tc-white {
     color: #F3976C!important;
@@ -872,7 +874,10 @@ h4 {
     .voffset-lg {
         margin-top: 30px;
     }
+    /*-------------------------------------------------------------------------------*/
     form {
+        margin: auto;
+        width: 90%;
         padding: 5px;
     }
     .close-lightbox {
@@ -901,3 +906,24 @@ h4 {
     }
 }
 /*---- MES RAJOUTS ----*/
+
+#detail_metier{
+    font-size: 13px;
+}
+#citation{
+    font-style: italic;
+    font-size: 15px;
+}
+#auteur{
+    margin-top: 0;
+    font-weight: bold;
+}
+address{
+    margin: auto;
+    color: #000000;
+    text-align: center;
+}
+
+#bloc-6{
+    background-color: darken(1);
+}
