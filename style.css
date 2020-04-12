@@ -906,6 +906,11 @@ h4 {
     }
 }
 /*---- MES RAJOUTS ----*/
+#contact{
+    width: auto;
+    margin: auto;
+    padding: 0;
+}
 
 #detail_metier{
     font-size: 13px;
@@ -923,7 +928,18 @@ address{
     color: #000000;
     text-align: center;
 }
-
-#bloc-6{
-    background-color: darken(1);
+#form_1 span{
+    display: block;
+}
+#form_1 input ~ span:after{
+    content: attr(title);
+    color: green;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s 1s opacity linear;
+}
+#form_1 input:valid ~ span::after{
+    visibility: visible;
+    opacity: 1;
 }
