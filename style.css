@@ -106,7 +106,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a /*.icon-md*/,
+/*.d-bloc a .icon-md,*/
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -661,12 +661,10 @@ h4 {
 }
 .btn-atomic-tangerine {
     background: rgb(131, 56, 21);
-    /*background: #F3976C;*/
     color: #FFFFFF!important;
 }
 .btn-atomic-tangerine:hover {
-    background: #F3976C;
-    /*background: #c27956!important;*/
+    background: #F3976C!important;
     color: #FFFFFF!important;
 }
 .ltc-white {
@@ -718,12 +716,13 @@ h4 {
         max-width: 100%
     }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/*-------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -740,10 +739,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    /*.bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -752,8 +747,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        /*padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
     }
 }
 @media all and (max-width: 767px) {
