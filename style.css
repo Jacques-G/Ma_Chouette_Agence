@@ -106,7 +106,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+.d-bloc a /*.icon-md*/,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -554,7 +554,7 @@ h6,
 p,
 label,
 .btn,
-a {
+/*a*/ {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -656,7 +656,8 @@ h4 {
     background-color: rgb(131, 56, 21);
 }
 .tc-white {
-    color: #F3976C!important;
+    
+    color: rgb(243, 180, 150)!important;
 }
 .btn-atomic-tangerine {
     background: rgb(131, 56, 21);
@@ -876,7 +877,6 @@ h4 {
     .voffset-lg {
         margin-top: 30px;
     }
-    /*-------------------------------------------------------------------------------*/
     form {
         margin: auto;
         width: 90%;
@@ -944,4 +944,7 @@ address{
 #form_1 input:valid ~ span::after{
     visibility: visible;
     opacity: 1;
+}
+.icon-md{
+    color:rgb(243, 180, 150) ;
 }
