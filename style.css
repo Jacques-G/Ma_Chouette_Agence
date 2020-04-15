@@ -283,6 +283,13 @@ a:hover {
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
+.nav > li{
+    transform: scale(1);
+    transition: transform 400ms;
+}
+.nav > li:hover{
+    transform: scale(1.2);
+}
 .nav > li a:hover,
 nav > li a:focus {
     background: transparent;
