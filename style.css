@@ -17,14 +17,6 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
 .bloc {
     width: 100%;
     clear: both;
@@ -447,7 +439,8 @@ button {
     bottom: 20px;
     right: 20px;
     opacity: 0;
-    z-index: 500;
+    /*z-index: 500;*/
+    visibility: hidden;
     transition: all .3s ease-in-out;
 }
 .scrollToTop span {
@@ -947,4 +940,11 @@ address{
 }
 .icon-md{
     color:rgb(243, 180, 150) ;
+}
+footer ul{
+    margin: 20px auto 2px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
 }
